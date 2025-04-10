@@ -14,13 +14,10 @@ export default defineConfig({
 		chunkFormat: 'module',
 		filename: "static/[name].[contenthash:8].js",
 		chunkFilename: "static/[name].[contenthash:8].chunk.js",
+		clean: true,
 	},
 	module: {
 		rules: [
-			{
-				test: /\.svg$/,
-				type: "asset"
-			},
 			{
 				test: /\.js$/,
 				use: [
