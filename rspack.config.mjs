@@ -50,6 +50,7 @@ export default defineConfig({
 	},
 	experiments: {
 		css: true,
-		outputModule: true
-	}
+		outputModule: true,
+		incremental: true,
+	},
 });
